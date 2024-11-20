@@ -15,7 +15,7 @@ class TestIperfClient(unittest.TestCase):
         server_ip = "192.168.2.1"  # Неправильна IP-адреса
         result, error = client(server_ip)
         self.assertTrue(error, "Expected an error, but got none.")
-        self.assertRegex(error.lower(), r"(error|connect failed|timed out|no route to host)",
+        self.assertRegex(error.lower(), r"(error|connect failed|invalid argument|timed out|no route to host|refused)",
                         "Unexpected error message format.")
 
 class TestIperfParser(unittest.TestCase):

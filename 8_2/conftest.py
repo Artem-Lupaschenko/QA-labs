@@ -7,7 +7,7 @@ from parser import *
 SERVER_IP = "192.168.1.2"
 SSH_HOST = "192.168.1.2"
 SSH_USER = "artem_lupashchenko_io14"
-SSH_PASSWORD = "123"
+SSH_PASSWORD = "134235"
 
 @pytest.fixture(scope="module")
 def server():
